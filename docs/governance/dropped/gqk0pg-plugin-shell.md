@@ -4,6 +4,9 @@ title: 插件外壳与安装：plugin.json + marketplace.json，对外命名 /do
 modules: [packaging]
 created: 2026-10-02
 parent: ""
+dropped: 被 b8zi11 取代：本仓改为纯市场目录（双宿主 marketplace.json，插件来源 = npm @done-coding/cli-skills），不再自建插件外壳与对外改名表
+dropped_at: 2026-10-23
+merged_into: b8zi11
 ---
 
 ## 背景（用户 2026-10-02 定调）

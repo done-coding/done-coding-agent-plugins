@@ -7,7 +7,7 @@
 
 | 领域 | 落点 | 职责 |
 |---|---|---|
-| `packaging` | `.claude-plugin/`（插件清单 / 市场清单）、同步脚本、`skills/` 下由 `@done-coding/cli-skills` 同步来的 CLI 类 skill | 插件外壳、安装与发布、CLI 类 skill 的同步与对外改名、本地开发与验收闭环 |
+| `packaging` | `.claude-plugin/marketplace.json`（Claude 市场目录）、`.agents/plugins/marketplace.json`（Codex 市场目录） | 插件条目与来源（npm 已发布包）、两宿主目录一一对应、安装说明与验收 |
 | `method` | `skills/workspace/`、`skills/search/` 及其随带的依赖文件 | 方法类 skill 的内容（自本机 `harness-workspace` / `harness-search` 迁入并去个人化） |
 
 无横向（调度）领域。

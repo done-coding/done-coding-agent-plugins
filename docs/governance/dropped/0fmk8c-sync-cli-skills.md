@@ -4,6 +4,9 @@ title: 同步 @done-coding/cli-skills 进插件（锁版本 + 确定性改名）
 modules: [packaging]
 created: 2026-10-02
 parent: ""
+dropped: 不再需要：插件内容直接取 npm 发布的 @done-coding/cli-skills（Claude / Codex 均实测支持 npm 插件来源），本仓不拷贝 skill、无同步脚本
+dropped_at: 2026-10-23
+merged_into: b8zi11
 ---
 
 ## 要做

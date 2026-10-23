@@ -1,4 +1,4 @@
-# 治理指令层 — done-coding-claude
+# 治理指令层 — done-coding-agent-plugins
 
 > 承接本目录治理工作的会话 [MUST] 遵守。完整方法论见 harness-workspace skill，本文件只落本仓的 [MUST] 条款。
 

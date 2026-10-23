@@ -6,7 +6,7 @@ issue-inbox: enabled
 scheduling-domain: none
 ---
 
-# 治理总纲 — done-coding-claude
+# 治理总纲 — done-coding-agent-plugins
 
 本目录按 harness-workspace 组织：**需求单态**（一条需求正文只在一个文件里，生命周期靠 `git mv` 表达）、**清单与正文分离**（清单由 `dc-harness lists` 生成）、**批次 = 一会话 = 一次交付**。
 
@@ -14,7 +14,7 @@ scheduling-domain: none
 
 | 文档 / 目录 | 职责 | 维护方式 |
 |---|---|---|
-| `CLAUDE.md` | 指令层：批次 / 并行 / 提交纪律 | 手写，按规则更新协议改 |
+| `AGENTS.md` | 指令层：批次 / 并行 / 提交纪律 | 手写，按规则更新协议改 |
 | `MODULES.md` | 领域清单（唯一真源，`dc-harness check` 从此解析合法 `modules`） | 新增落点时同批改 |
 | `SNAPSHOT.md` | 治理视图：每领域一行 + 依赖 + 独占点 | 交付时同笔更新 |
 | `../BUSINESS_SNAPSHOT.md` / `../TECH_SNAPSHOT.md` | 项目全貌 | 交付时同笔更新 |

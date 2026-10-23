@@ -1,23 +1,22 @@
-# BUSINESS_SNAPSHOT — done-coding-claude
+# BUSINESS_SNAPSHOT — done-coding-agent-plugins
 
-> 文档定位：快照型（覆盖更新，只描述当前状态；[MUST NOT] 留流水账）。技术细节见 `TECH_SNAPSHOT.md`，治理视图见 `governance/SNAPSHOT.md`。
+> 文档定位：快照型 · 覆盖更新、只写当前状态。
 
-## 是什么
+## 定位
 
-done-coding 的 **Claude Code 插件**（插件名 `done-coding`）：装上后在任意项目里以 `/done-coding:<skill>` 使用 done-coding 能力——一句话让 AI 用 hub 模板建项目、治理工具与跨仓 issue、workspace / search 两个方法。
+done-coding 的 AI 编码工具**插件市场目录**：让 Claude Code 与 Codex 用各自的插件命令装上 done-coding 的 skill，与 superpowers 等第三方插件同一生态位。本仓只维护「有哪些插件、各从哪来」，插件内容来自 npm 已发布的包。
 
-## 服务谁
+## 插件
 
-| 使用方 | 怎么用 |
-|---|---|
-| 用户本人（1 人 + 多 AI 会话，多台机器） | 装插件后在任意项目会话里用 |
-| done-creating 等应用仓的会话 | 向 done-coding 各仓提基于实践的 issue（收件仓查 `~/.done-coding/harness/scope/`） |
+| 插件 | 来源 | 提供 |
+|---|---|---|
+| `done-coding` | npm `@done-coding/cli-skills`（`latest`） | `create-done-coding` · `cli-generator` · `module-generate` · `cli-harness`（宿主内以 `done-coding:<名>` 出现） |
 
-## 与其他仓的关系
+## 使用方
 
-- **done-coding-cli**：CLI 类 skill 的源头是其 `@done-coding/cli-skills`；本仓只同步、改名、打包，不改内容。
-- **done-coding-template-hub**：建项目所用模板的来源。
+- 个人机器：Claude `/plugin marketplace add done-coding/done-coding-agent-plugins` + `/plugin install done-coding@done-coding`；Codex `codex plugin marketplace add …` + `codex plugin add done-coding@done-coding`（见 README）。
+- dotfiles 作为使用方，只在各宿主配置里声明市场与启用的插件，本仓不感知 dotfiles。
 
-## 当前状态
+## 待定
 
-已初始化治理目录，尚无插件产物；首版需求在 `governance/backlog/`。
+- 方法类 skill（harness-workspace / harness-search）是否以插件形式经本市场分发（backlog `hd8ue4`，需用户裁决；现由 dotfiles 统一维护）。

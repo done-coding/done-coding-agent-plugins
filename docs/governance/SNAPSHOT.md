@@ -5,19 +5,19 @@
 
 | 模块 | 一行摘要 |
 |---|---|
-| `packaging` | 未开工：插件外壳 / cli-skills 同步 / 本地开发闭环均在 backlog |
-| `method` | 未开工：workspace / search 迁入在 backlog |
+| `packaging` | 市场目录已建：Claude / Codex 两份 marketplace.json，插件 `done-coding` ← npm `@done-coding/cli-skills`；两宿主本地安装实测通过 |
+| `method` | 待用户裁决是否经本市场分发（backlog `hd8ue4`） |
 
 ## 跨领域依赖
 
-`method` 的 skill 经 `packaging` 的插件外壳对外发布；`packaging` 不依赖 `method` 的内容。
+`method` 若分发，同样以 npm 包为来源，在 `packaging` 的两份目录各加一条。
 
 ## 外部依赖
 
-CLI 类能力依赖 done-coding-cli（issue `ff5p5s`：发布 `@done-coding/cli-harness`、实现 scope 注册、`create-done-coding` 并入 x-create 推断规则）。
+插件内容依赖 done-coding-cli 发布的 `@done-coding/cli-skills`（2026-10-23 已发 0.3.0）；skill 改动回 done-coding-cli。
 
 ## 共享骨架 / 独占点
 
 | 点 | 规则 |
 |---|---|
-| `.claude-plugin/`（插件 / 市场清单） | 改动方在 `PROGRESS.md` 声明独占 |
+| `.claude-plugin/`、`.agents/plugins/`（两份市场目录） | 改动方在 `PROGRESS.md` 声明独占，两份同改 |

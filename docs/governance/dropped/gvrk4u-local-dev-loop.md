@@ -4,6 +4,9 @@ title: 本地开发与验收闭环：--plugin-dir 日常加载、本地市场安
 modules: [packaging]
 created: 2026-10-02
 parent: ""
+dropped: 并入 b8zi11 批次：本地以目录作市场 + plugin validate + 临时配置目录安装实测即验收闭环；不再有 --plugin-dir 加载工作区 skill 的场景
+dropped_at: 2026-10-23
+merged_into: b8zi11
 ---
 
 ## 背景（用户 2026-10-02）

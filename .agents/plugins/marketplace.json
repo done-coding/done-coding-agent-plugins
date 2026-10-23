@@ -1,0 +1,10 @@
+{
+  "name": "done-coding",
+  "plugins": [
+    {
+      "name": "done-coding",
+      "description": "done-coding CLI 的 Agent Skills：用模板建项目、代码生成、模块模板生成、治理清单与跨仓 issue。",
+      "source": { "source": "npm", "package": "@done-coding/cli-skills" }
+    }
+  ]
+}
