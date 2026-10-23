@@ -9,6 +9,7 @@
       "source": { "source": "npm", "package": "@done-coding/cli-skills" },
       "homepage": "https://github.com/done-coding/done-coding-cli/tree/master/packages/cli-skills",
       "license": "MIT",
+      "category": "development",
       "keywords": ["done-coding", "scaffold", "codegen", "harness"]
     }
   ]

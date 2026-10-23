@@ -5,7 +5,7 @@
 
 | 模块 | 一行摘要 |
 |---|---|
-| `packaging` | 市场目录已建：Claude / Codex 两份 marketplace.json，插件 `done-coding` ← npm `@done-coding/cli-skills`；两宿主本地安装实测通过 |
+| `packaging` | 市场目录已建：Claude / Codex 两份 marketplace.json，插件 `done-coding` ← npm `@done-coding/cli-skills`；两宿主本地安装实测通过；展示字段（category / policy）已对齐 superpowers |
 | `method` | 待用户裁决是否经本市场分发（backlog `hd8ue4`） |
 
 ## 跨领域依赖

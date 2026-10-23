@@ -11,10 +11,12 @@
 
 无代码、无依赖、无构建，不发布 npm。两份目录的插件条目一一对应：插件 `done-coding`，`source = { "source": "npm", "package": "@done-coding/cli-skills" }`，不钉版本（取 `latest`）。
 
+展示字段对齐 superpowers：Claude 条目 `category: development`；Codex 目录带 `interface.displayName`，条目带 `category: Developer Tools` 与 `policy`（`installation: AVAILABLE` / `authentication: ON_INSTALL`，取值以 Codex 0.162.1 程序内枚举为准）。版本号不写在市场条目里，由包内清单提供。
+
 ## 关键事实（2026-10-23 实测：Claude Code 2.1.283、Codex 0.162.1）
 
 - 两宿主均支持 npm 插件来源：安装时拉取 npm 包、不执行 install 脚本，插件根下 `skills/` 即 skill。
-- 包内无插件清单时：Claude 以市场条目为清单（`claude plugin list` 显示 `Version: unknown`）；Codex 自动生成 `.codex-plugin/plugin.json`。
+- 包内插件清单：`@done-coding/cli-skills` 0.3.0 不带清单——Claude 以市场条目为清单（`claude plugin list` 显示 `Version: unknown`），Codex 自动生成 `.codex-plugin/plugin.json`。done-coding-cli 已改为构建时随包生成 `.claude-plugin/plugin.json`、`.codex-plugin/plugin.json`（版本随 package.json），下一次发版后生效。
 - Codex 安装后可用 skill 为 `done-coding:cli-generator` 等 4 项；Claude 安装成功、已启用，插件缓存含 4 个 skill。
 - 插件名 `done-coding` 即 skill 命名空间前缀；市场名 `done-coding`，安装 id `done-coding@done-coding`。
 
